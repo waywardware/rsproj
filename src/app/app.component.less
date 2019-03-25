@@ -1,0 +1,45 @@
+@color_1: #818181;
+@color_2: #f1f1f1;
+@font_family_1: 'Lato', 'Roboto' sans-serif;
+@background_color_1: #111;
+@text-align:left;
+
+body {
+	font-family: @font_family_1;
+}
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: @background_color_1;
+	overflow-x: hidden;
+    padding-top: 20px;
+    text-align:@text-align;
+	a {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 20px;
+		color: @color_1;
+		display: block;
+		&:hover {
+			color: @color_2;
+		}
+	}
+}
+.main {
+	margin-left: 160px;
+	font-size: 14px;
+    padding: 0px 10px;
+    text-align:@text-align;
+}
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+		a {
+			font-size: 18px;
+		}
+	}
+}
